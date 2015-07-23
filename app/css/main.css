@@ -1,3 +1,147 @@
 html {
 	height: 100%;
 }
+body {
+	height: 100%;
+	background: url(../img/bg.jpg) repeat;
+	font: normal 1em '../fonts/firasans-light.ttf';
+	color: #4a545d;
+}
+
+/*Прибить подвал к низу*/
+.Wrapper {
+	position: relative;
+	min-height: 100%;
+	min-width: 970px; /*обязательно указать миинмальную ширину примерно на 10 пикселей шире контейнера */
+	height: auto!important;
+}	
+/*.Wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
+*/
+.block-footer {
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+	border: dotted;
+}
+/*Прибить подвал к низу - закончили*/
+/* Шапка */
+.container-head {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	border: dashed;	/*демонтировать при  выпуске проекта*/
+	/*color: red;	/*демонтировать при  выпуске проекта*/
+	}
+.block-header {
+	height: 119px;
+	background: #eff3f7 url(../img/line-header.png) bottom center no-repeat;
+	position: relative;
+	margin-bottom: 39px;
+	
+}
+.block-header .head-logo-link{
+	position: absolute;
+	top: 39px;
+	left: 0;
+}
+.block-header .head-logo-text{
+	position:absolute;
+	left:-9999px
+}
+.block-header .socialbut{
+	position: absolute;
+	right: 0;
+	top: 36px;	
+}
+/* Шапка - конец */
+
+/* Блок социальных ссылок */
+.socialbut{
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+	border: dotted; /*Демонтаж*/
+	color: green;	/*Демонтаж*/
+}
+.socialbut .socialbut-item {
+  list-style: none;
+  display: inline-block;
+  height: 47px;
+  width: 47px;
+  margin-left: 19px;
+  /* Отступ у таких элементов всегда слева */
+}
+.socialbut .socialbut-item:first-child {
+  margin-left: 0;
+  /* А у первого элемента обнуляем отступ */
+}
+.socialbut .socialbut-link {
+	display: block;
+  height: 100%;
+  width: 100%;
+  text-indent: -9999px;
+  background: url(../img/socials.png) no-repeat;
+}
+.socialbut .socialbut-link.vk {background-position: -412px -10px; }
+.socialbut .socialbut-link.vk:hover {background-position: -478px -10px;}
+.socialbut .socialbut-link.tw {background-position: -278px -10px;}
+.socialbut .socialbut-link.tw:hover {background-position: -345px -10px;}
+.socialbut .socialbut-link.fb {background-position: -10px -10px;}
+.socialbut .socialbut-link.fb:hover {background-position: -77px -10px;}
+.socialbut .socialbut-link.gt {background-position: -144px -10px;}
+.socialbut .socialbut-link.gt:hover {background-position: -211px -10px;}
+
+/* Блок социальных ссылок - конец */
+/* Сайдбар */
+.sidebar {
+	width: 250px;
+	float: left;
+}
+/*Подвал*/
+.block-footer {
+	background: #eff3f7 url(../img/line-footer.png) top center no-repeat;
+	font-family: 'fira_sanslight';
+	color: #4a545d;
+
+}
+.block-footer .container {
+	position: relative;
+	padding-top: 23px;
+	border: dotted;
+}
+.block-footer .copyright {
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+	border: dotted;
+}
+/* Логин */
+.block-footer .login{
+	position: absolute;
+	top: 26px;
+	left: 20px;
+	border: dotted;
+}
+.login .login-inner {
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;	/*Убрали подчеркиваине ссылки*/
+	background: url(../img/ic-login-down.png) no-repeat;
+	padding-left: 24px;
+	text-indent: -9999px; /*Убрали текст Войти*/
+}
+/* Логин- закончили */
+/* Подвал-закончили */
+
+
