@@ -9,23 +9,23 @@ body {
 }
 
 /*Прибить подвал к низу*/
-.Wrapper {
+.wrapper {
 	position: relative;
 	min-height: 100%;
 	min-width: 970px; /*обязательно указать миинмальную ширину примерно на 10 пикселей шире контейнера */
 	height: auto!important;
 }	
-/*.Wrapper:after {
+ .wrapper:after {
 	content: "";
 	height: 80px;
 	display: block;
 }
-*/
+
 .block-footer {
 	min-width: 970px;
 	height: 80px;
+    background: #eff3f7 url(../img/line-header.png) top center no-repeat;
 	margin-top: -80px;
-	border: dotted;
 }
 /*Прибить подвал к низу - закончили*/
 /* Шапка */
@@ -35,8 +35,6 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
-	border: dashed;	/*демонтировать при  выпуске проекта*/
-	/*color: red;	/*демонтировать при  выпуске проекта*/
 	}
 .block-header {
 	height: 119px;
@@ -60,14 +58,11 @@ body {
 	top: 36px;	
 }
 /* Шапка - конец */
-
 /* Блок социальных ссылок */
 .socialbut{
 	margin: 0;
 	padding: 0;
 	min-width: 260px;
-	border: dotted; /*Демонтаж*/
-	color: green;	/*Демонтаж*/
 }
 .socialbut .socialbut-item {
   list-style: none;
@@ -98,11 +93,12 @@ body {
 .socialbut .socialbut-link.gt:hover {background-position: -211px -10px;}
 
 /* Блок социальных ссылок - конец */
-
 /* Сайдбар */
 .sidebar {
 	width: 250px;
 	float: left;
+     font-size: 1.2em   
+
 }
 /* Сайдбар -конец*/
 /* Навигация */
@@ -111,6 +107,7 @@ body {
 	background: #eff3f7;
 	border-radius: 4px;
 	margin-bottom: 26px;
+    cursor: pointer;
 }
 .navigation-block .navigation-menu {
 	list-style: none;
@@ -129,7 +126,7 @@ body {
 	background: #3ba8c0;
 	margin: 0;
 	border-bottom: none;
-	padding-left: 11px;
+	padding-left: 10px;
 	margin-bottom: -2px; /* Хак */
 }
 
@@ -151,67 +148,100 @@ body {
 	color: #3ba8c0;
 } 
 /* Навигация - конец */
+
+
+/* Контакты - начало */
 .contacts {
-  background: #3ba8c0;
-  border-radius: 4px;
-  color: #F9EDE4;
+    
+
+    
+    
   }
- .contacts-header {
-   width: 250px;
-  height: 40px;
-padding: 21px, 15px;
+.contacts-menu {
+color: #F9EDE4;
+list-style-type: none;
+padding: 0; 
+    font-style: normal;
+    
+}
+.contacts-menu li:first-child {
+    border-radius: 5px 5px 0px 0px;
+}
+.contacts-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.contacts-menu li a{
+display: block;
+    margin: 0;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.contacts-header {
+    padding: 10px 0 10px 30px;
+    background-color: #3ba8c0;
  }
- .contacts-header .contacts-h3 {
-font-size: 21px;
-font-family: "Fira Sans";
 
 
- }
-
-.contacts .contacts-menu {
-	list-style: none;
-	margin-top: 0, 10px;
-	padding: 0;
+.contacts .contacts-mail {
+    padding-left: 65px;
+    background: #41b9d4 url(../img/ic-mail.png) no-repeat 25px 8px;
 }
-.contacts .contacts-but {
-	margin: 0, 11px;
+.contacts-phone {
+     padding-left: 65px;
+    background: #41b9d4 url(../img/ic-phone.png) no-repeat 25px 8px;
 
 }
-.contacts .contacts-but:first-child{
-	border-top: none;
-	}
-/* Навигация - текущий пункт меню*/
-.contacts .contacts-but.current{	
-	background: #3ba8c0;
-	margin: 0;
-	border-bottom: none;
-	padding-left: 11px;
-	margin-bottom: -2px; /* Хак */
+
+.contacts-skype {
+     padding-left: 65px;
+    background: #41b9d4 url(../img/ic-skype.png) no-repeat 25px 8px;
+
 }
-.contacts .contacts-but.current .contacts-link{
-	color: #f9fafb;
-	font-size: 15px;
+
+
+---------------------------------------------------------------------------------
+
+/*Подвал*/
+.block-footer {
+	background: #eff3f7 url("../img/line-footer.png") top center no-repeat;
+	font-family: 'fira_sanslight';
+	color: #4a545d;
+
 }
-/* Навигация - текущий пункт меню - конец */
-.contacts .contacts-link {
-	font-family: "Fira Sans";
+.block-footer .container {
+	position: relative;
+	padding-top: 23px;
+}
+.block-footer .copyright {
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+}
+/* Логин */
+.block-footer .login{
+	position: absolute;
+	top: 26px;
+	left: 240px;
+}
+.login .login-inner {
 	display: block;
-	font-size: 17px;
-	text-decoration: none;
-	color: #F9EDE4;
-	margin-left: 16px;
-	padding: 20px 0px;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;	/*Убрали подчеркиваине ссылки*/
+	background: url("../img/ic-login-down.png") no-repeat;
+	padding-left: 24px;
+	text-indent: -9999px; /*Убрали текст Войти*/
 }
-.contacts .contacts-link:hover{
-	color: #3ba8c0;
-
-/* Навигация - конец */
+/* Логин- закончили */
+/* Подвал-закончили */
 ----------------------------------------------------------------------------
-/* Главная область */
-.variable-content{
-	width: 650px;
-	float: right;
-}
+
 /* общие классы */
 .container {
 	width: 960px;
@@ -238,45 +268,20 @@ font-family: "Fira Sans";
 /* clearfix - конец */
 /* общие классы - конец */
 ----------------------------------------------------------------------------
-/*Подвал*/
-.block-footer {
-	background: #eff3f7 url(../img/line-footer.png) top center no-repeat;
-	font-family: 'fira_sanslight';
-	color: #4a545d;
 
+
+/* Главная область */
+.variable-content{
+	width: 650px;
+	float: right;
 }
-.block-footer .container {
-	position: relative;
-	padding-top: 23px;
-	border: dotted;
+
+.wrapper {
+   	position: relative;
+	min-height: 100%;
+	min-width: 970px; /*обязательно указать миинмальную ширину примерно на 10 пикселей шире контейнера */
+	height: auto!important; 
 }
-.block-footer .copyright {
-	margin: 0 180px;
-	padding-top: 7px;
-	text-align: center;
-	font-size: 13px;
-	border: dotted;
-}
-/* Логин */
-.block-footer .login{
-	position: absolute;
-	top: 26px;
-	left: 20px;
-	border: dotted;
-}
-.login .login-inner {
-	display: block;
-	height: 40px;
-	font-family: 'fira_sansbook';
-	font-size: 16px;
-	line-height: 2.2;
-	color: #4a545d;
-	text-decoration: none;	/*Убрали подчеркиваине ссылки*/
-	background: url(../img/ic-login-down.png) no-repeat;
-	padding-left: 24px;
-	text-indent: -9999px; /*Убрали текст Войти*/
-}
-/* Логин- закончили */
-/* Подвал-закончили */
+
 
 
