@@ -1,17 +1,18 @@
-Как установить мой проект
+<h1>Как установить мой проект</h1>
+<p>
 1. git clone https://github.com/itkatun/dz-port.git site
 2. cd site 
 3. bower i jquery normalize.css modernizer -S
 4. npm i gulp browser-sync -D
 5. gulp
 
-
-
+</p>
+<p>
 --------------------------------------------------------
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/itkatun/dz-port.git
+git remote add origin
 git push -u origin master
 
 
@@ -19,3 +20,4 @@ git push -u origin master
 git remote add origin https://github.com/itkatun/dz-port.git
 git push -u origin master
 --------------------------------------------------------
+</p>
