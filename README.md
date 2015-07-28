@@ -1,14 +1,17 @@
 <h1>Как установить мой проект</h1>
-<p>
-1. git clone https://github.com/itkatun/dz-port.git site
-2. cd site 
-3. bower i jquery normalize.css modernizer -S
-4. npm i gulp browser-sync -D
-5. gulp
 
-</p>
+<ul>
+<li>1. git clone https://github.com/itkatun/dz-port.git site</li>
+<li>2. cd site</li>
+<li>3. bower i jquery normalize.css modernizer -S</li>
+<li>4. bower i bpopup -S</li>
+<li>5. npm i gulp browser-sync -D</li>
+<li>6. gulp</li>
+</ul>
+
 <p>
 --------------------------------------------------------
+</br>
 git init
 git add README.md
 git commit -m "first commit"
