@@ -1,0 +1,48 @@
+/* Общие стили для секциb мои работы */
+.jobs {
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.jobs-header{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block;
+
+}
+.jobs-body{
+	padding-bottom: 40px;	
+}
+.jobs-list{	list-style: none;
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+.jobs-item{margin-bottom: 8px;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */}
+
+   .jobs-figure {
+    display: block;  /*Блочный элемент */
+   /* float: left;*/ /* Блоки выстраиваются по горизонтали */
+    margin: 0 10px 10px 0; /* Отступы */
+    text-align: center; /* Выравнивание по центру */
+   }
+
+   .jobs-figcaption {
+    color: #3ba8c0; /* Цвет текста */
+    text-align: center; /* Выравнивание по центру */
+   }
+
+
+display:inline-block
+li{margin:bottom;
+}
+список
+фигуре
