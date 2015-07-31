@@ -23,20 +23,37 @@
 
    }
 .jobs-item{
-    margin-bottom: 8px;
-    margin-right: 5px; /* Отступ слева */
+    margin-bottom: 40px;
+    margin-right: 15px; /* Отступ слева */
  
     padding: 1px; /* Поля вокруг текста*/ 
     display: inline-block;
     vertical-align: top;
-      border-width: 2px;
+
+
+  }
+.jobs-img {      
+  border-width: 2px;
   border-color: #3ba8c0;
   border-style: solid;
    border-radius: 5px;
-
-  }
+ }
+ .jobs-img:hover {
+ 	background: #016ca4; /*Вопрос-Должен затеняться*/ 
+ }	
+ /* .jobs-img-add {      
+  border-width: 1px;
+  border-color: #3ba8c0;
+  border-style: dashed;
+   border-radius: 5px;
+ } */
 
    .jobs-figure {
+    display: block;  /*Блочный элемент */
+    margin: 0 auto;  /* Отступы */
+
+     }
+       .jobs-figure-add {
     display: block;  /*Блочный элемент */
     margin: 0 auto;  /* Отступы */
 
